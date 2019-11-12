@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLoat</title>
+    <style type="text/css">
+        #sidebar{
+            background-color: red;
+            width: 50%;
+            float: left;
+        }
+        #content{
+
+            width: 25%;
+            height: 50px;
+            background-color: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <span>- Content sẽ kéo lên trên theo float của sidebar nếu nó không có thuộc tính kích thước
+          - Khi có độ rộng thì không bị kéo theo bởi thuộc tính float
+    </span>
+    <div class="container">
+        <div id="sidebar">
+            Sidebar
+        </div>
+        <div id="content">
+            Content
+        </div>
+    </div>
+</body>
+</html>
