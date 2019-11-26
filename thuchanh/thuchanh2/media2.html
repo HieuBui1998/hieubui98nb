@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media</title>
+    <link rel="stylesheet" href="../thuchanh1/normalize.css">
+    <style type="text/css">
+        header, footer{
+            background-color: #c4ee7d;
+            text-align: center;
+            padding: 30px;
+        }
+
+
+        aside{
+
+            width: 30%;
+            float: left;
+            min-height: 300px;
+            background-color: aqua;
+        }
+        .main-content{
+            width: 70%;
+            min-height: 300px;
+
+            text-align: center;
+            background-color: #FFA500;
+            float: right;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            overflow: auto;
+        }
+        ul{
+            margin: 0;
+        }
+        @media screen and (max-width: 600px) {
+            .main-content{
+                width: 100%;
+                float: none;
+                background-color: blueviolet;
+
+            }
+            aside{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    Header
+</header>
+<main>
+    <section class="main-content">
+    <h1>Nội dung chính của trang web</h1>
+    </section>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    footer
+</footer>
+
+</body>
+</html>
