@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .header-main{
+            line-height: 1;
+            border-bottom: 1px solid black;
+        }
+        .left{
+            margin-top: 20px;
+
+
+        }
+        .left-content{
+            color: #343a40;
+            margin-top: 20px;
+        }
+        .logo-content{
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+        .logo{
+            margin-top: 10px;
+        }
+        .subscribe{
+            border:1px solid black;
+            margin-top: 10px;
+            float: right;
+        }
+        .nav-link {
+            color: #343a40;
+            font-size: 15px;
+        }
+        .banner{
+            background-image:url("php.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 350px;
+            padding: 50px 30px ;
+
+            color: white;
+        }
+        .python{
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .python-content{
+            border: 1px solid cadetblue;
+        }
+        .python-content .left{
+            padding: 20px;
+            width: 60%;
+            float: left;
+            margin: 0;
+
+        }
+
+        .img-python{
+            float: left;
+            width: 40%;
+        }
+        .img-python img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .blog{
+            margin-top: 50px;
+        }
+        .img-side{
+            margin-top: 50px;
+        }
+        .img-side img{
+            width: 100%;
+        }
+        .footer{
+            background-color: #343a40;
+        }
+        .footer h2{
+            color: #dee2e6;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header-main">
+        <div class="row">
+            <div class="col-4 left">
+                <a href="#" class="left-content">Theo dõi</a>
+            </div>
+            <div class="col-4 logo">
+                <a href="#" class="logo-content"><h2>Tecktalk.vn</h2></a>
+            </div>
+            <div class="col-4">
+                <a href="#" class="btn btn-sm subscribe">Đăng kí</a>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="navigation">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Công nghệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Lập trình</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sự Kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Chuyên gia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tâm sự</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Topdev</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+    </div>
+    <div class="banner">
+        <h2>Bạn hoàn toàn có thể xây dựng cho mình một Mạng Xã Hội</h2>
+    </div>
+    <div class="row python">
+        <div class="col-6 python-post" style="padding-left: 0 !important;">
+            <div class="python-content clearfix">
+                <div class="left">
+                    <h4>Python</h4>
+                    <h3>Thao tác với File trong Python</h3>
+                    <p>Nov 12</p>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Continue reading</a>
+                </div>
+                <div class="img-python">
+                    <img src="IMG_6478-696x522.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-6 python-post" style="padding-right: 0 !important;">
+            <div class="python-content clearfix">
+                <div class="left">
+                    <h4>Python</h4>
+                    <h3>Thao tác với File trong Python</h3>
+                    <p>Nov 12</p>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Continue reading</a>
+                </div>
+                <div class="img-python">
+                    <img src="IMG_6478-696x522.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        <div class="row">
+            <div class="col-8">
+                <div class="blog">
+                    <div class="blog-item">
+                        <h2>Bạn hoàn toàn có thể xây dựng cho mình một Mạng Xã Hội & Kinh Doanh trên đó</h2>
+                        <p>January 1, 2014 by <a href="">Mark</a></p>
+                        <p>Đã quá quen tai khi nghe đến Monolithic, Microservices, Kubernetes,
+                            vậy bạn có từng nghĩ mình sẽ sở hữu một MXH trong tay trong vòng 03 tháng bằng Microservices?
+                            Mạng xã hội hiện tại không còn là ảo mà thật ra đang diễn biến phức
+                            tạp hơn từng ngày khi mà vấn đề xây dựng một cộng đồng trong
+                            kinh doanh hiện nay đang trở thành một xu hướng!</p>
+                    </div>
+
+                    <div class="blog-item">
+                        <h2>Bạn hoàn toàn có thể xây dựng cho mình một Mạng Xã Hội & Kinh Doanh trên đó</h2>
+                        <p>January 1, 2014 by <a href="">Mark</a></p>
+                        <p>Đã quá quen tai khi nghe đến Monolithic, Microservices, Kubernetes,
+                            vậy bạn có từng nghĩ mình sẽ sở hữu một MXH trong tay trong vòng 03 tháng bằng Microservices?
+                            Mạng xã hội hiện tại không còn là ảo mà thật ra đang diễn biến phức
+                            tạp hơn từng ngày khi mà vấn đề xây dựng một cộng đồng trong
+                            kinh doanh hiện nay đang trở thành một xu hướng!</p>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <h2>Bạn hoàn toàn có thể xây dựng cho mình một Mạng Xã Hội & Kinh Doanh trên đó</h2>
+                        <p>January 1, 2014 by <a href="">Mark</a></p>
+                        <p>Đã quá quen tai khi nghe đến Monolithic, Microservices, Kubernetes,
+                            vậy bạn có từng nghĩ mình sẽ sở hữu một MXH trong tay trong vòng 03 tháng bằng Microservices?
+                            Mạng xã hội hiện tại không còn là ảo mà thật ra đang diễn biến phức
+                            tạp hơn từng ngày khi mà vấn đề xây dựng một cộng đồng trong
+                            kinh doanh hiện nay đang trở thành một xu hướng!</p>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <h2>Bạn hoàn toàn có thể xây dựng cho mình một Mạng Xã Hội & Kinh Doanh trên đó</h2>
+                        <p>January 1, 2014 by <a href="">Mark</a></p>
+                        <p>Đã quá quen tai khi nghe đến Monolithic, Microservices, Kubernetes,
+                            vậy bạn có từng nghĩ mình sẽ sở hữu một MXH trong tay trong vòng 03 tháng bằng Microservices?
+                            Mạng xã hội hiện tại không còn là ảo mà thật ra đang diễn biến phức
+                            tạp hơn từng ngày khi mà vấn đề xây dựng một cộng đồng trong
+                            kinh doanh hiện nay đang trở thành một xu hướng!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 img-side">
+                <img src="sideabr.png" alt="">
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>HieuBui98nb.com</h2>
+    </footer>
+</div>
+
+</body>
+</html>

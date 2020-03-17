@@ -13,6 +13,9 @@ header #top #logo{
     margin-top: 15px;
     float: left;
 }
+header #top nav ul{
+    text-align: center;
+}
 header #top nav ul li{
     background-color: white;
     float: left;
@@ -26,6 +29,7 @@ header #top nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 15px;
+
 }
 /*li:hover{*/
 /*    text-decoration: underline;*/

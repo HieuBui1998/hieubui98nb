@@ -1,0 +1,111 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-beader {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px 0;
+}
+
+
+.main-beader .subscribe-container {
+    padding-top: 4px;
+}
+
+.main-beader .subscribe {
+    color: #6c757d;
+}
+
+
+.main-beader .logo {
+    font-size: 2.25rem;
+    color: #343a40 !important;
+}
+
+.main-beader .logo-container {
+    text-align: center;
+}
+
+.main-beader .logo:hover {
+    text-decoration: none;
+}
+
+.main-beader .register {
+    border: 1px solid #6c757d;
+    float: right;
+}
+
+.navigation li a {
+    padding: 8px;
+    color: #6c757d;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.banner {
+    background-image: url("php.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 350px;
+}
+
+.banner h1{
+    width: 70%;
+    color: white;
+    font-size: 32px;
+    padding: 50px;
+}
+
+
+.feature-post-row {
+    margin: 48px 0;
+}
+
+
+.feature-post-row img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featute-post-thumbnail {
+    height: 100%;
+}
+
+.feature-post-inner {
+    border: 1px solid #dee2e6!important;
+
+}
+
+.feature-post .feature-post-content {
+    width: 60%;
+    float: left;
+    padding: 24px;
+}
+
+.feature-post .featute-post-thumbnail {
+    width: 40%;
+    float: left;
+}
+
+
+
+.blog-item {
+    margin: 20px 0;
+}
+
+
+footer {
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color: #6c757d;;
+}

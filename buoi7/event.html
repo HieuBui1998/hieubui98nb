@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+<pre>
+    Sự kiện:
+        onclick: kich chuột
+        onsubmit: gửi dữ liệu từ form
+</pre>
+<form action="" method="post">
+    <p>
+        <label>Toán: </label>
+        <input type="text" id="toan" name="toan">
+    </p>
+    <p>
+        <label>Lý: </label>
+        <input type="text" id="ly" name="ly">
+    </p>
+    <p>
+        <label>Hóa: </label>
+        <input type="text" id="hoa" name="hoa">
+    </p>
+    <p>
+        <label>Năng Khiếu: </label>
+        <input type="text" id="nk" name="nk">
+    </p>
+</form>
+<button onclick="tinhtoan()">Kết Quả</button>
+<script type="text/javascript">
+    function mean (toan,li,hoa,dnk) {
+        toan = parseInt(toan);
+        li = parseInt(toan);
+        hoa = parseInt(hoa);
+        dnk = parseInt(dnk);
+        var tb = 0;
+        tb = (toan + li + hoa+(dnk *2))/5;
+        return alert("ĐTB: "+ tb);
+
+    }
+    function tinhtoan() {
+        var t = document.getElementById("toan").value;
+        var l = document.getElementById("ly").value;
+        var h = document.getElementById("hoa").value;
+        var nk = document.getElementById("nk").value;
+
+       // mean(t,l,h,nk);
+        var checkValid = true;
+        var message = "";
+        if ( (t == '') || (h == '') || (l == '') || (nk == '') ) {
+            checkValid = false;
+            message = message + " Dữ liệu chưa được nhập đầy đủ";
+        }
+        console.log(typeof 3);
+        console.log(typeof t);
+        t = parseInt(t);
+        h = parseInt(h);
+        l = parseInt(l);
+        nk = parseInt(nk);
+        /*if ( (typeof t != "number") || (typeof h != "number") || (typeof l != "number") || (typeof nk != "number") ) {
+            checkValid = false;
+            message = message + " Dữ liệu không phải là 1 số";
+        }*/
+        if ( (t > 10 || t < 0) || (h > 10 || h < 0) || (l > 10 || l < 0) || (nk > 10 || nk < 0) ) {
+            checkValid = false;
+            message = message + " Điểm phải trong giới hạn từ 0 đến 10";
+        }
+        if (checkValid == true) {
+            var kq = mean(t,l,h,nk);
+        } else {
+            alert(message);
+        }
+
+    }
+</script>
+</body>
+</html>
